@@ -7,15 +7,29 @@
     background-image: url(image/Background\ Lamp.png);
     background-size: 100%;
     background-position: center;
-    /* background-repeat: no-repeat;
-    background-attachment: fixed; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
     width: 100%;
     height: 100vh;
 }
 
+#home:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, #000000, rgba(0,0,0,0));
+}
+
+.container{
+    padding: 10px 10%;
+}
+
 /* navigation */
 .nav{
-    margin-right: 25px;
+    /* margin-right: 10px; */
     text-align: right;
     justify-content: space-between;
     font-family: 'garet', sans-serif;
@@ -24,7 +38,7 @@
 .nav li{
     display: inline-block;
     padding: 7px;
-    margin-top: 15px;
+    margin-top: 17px;
 }
 
 .nav li a{
@@ -51,7 +65,7 @@
     font-family: 'atkinson hyperlegible', sans-serif;
     font-weight: bold;
     position: absolute;
-    top: 48%;
+    margin-top: 18%;
     display: flex;
     left: 12.9%;
 }
@@ -66,14 +80,110 @@
 }
 
 .role{
-    top: 47%;
+    margin-top: 17%;
     left: 13.4%;
     position: absolute;
 }
 
 .name{
-    top: 78%;
-    right: 13.4%;
+    margin-top: 32%;
+    right: 12.5%;
     position: absolute;
+}
+
+/* about me */
+#about-me{
+    /* background-image: url(image/Background.png); */
+    background-color: black;
+}
+
+.profil {
+    margin-top: 50px;
+}
+
+.desc h2{
+    font-family: 'atkinson hyperlegible', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 85px;
+    margin-top: 25%;
+    flex-basis: 50%;
+    margin-left: 20px;
+}
+
+.desc p{
+    font-family: 'garet', sans-serif;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    flex-basis: 50%;
+}
+
+.desc span{
+    background-color: #c43727;
+    padding: 3px;
+    font-weight: 550;
+}
+
+.desc {
+    display: flex;
+    flex-wrap: nowrap; /* Mencegah elemen membungkus */
+    justify-content: space-between;
+    align-items: center; /* Agar vertikalnya sejajar */
+    text-align: left;
+}
+
+.profil {
+    flex-basis: 70%; 
+}
+
+.photo {
+    flex-basis: 50%; /* Memberi foto setengah lebar kontainer */
+    display: flex;
+    justify-content: flex-end; 
+    position: relative;
+}
+
+.photo img {
+    width: 450px; /* Atur ukuran gambar sesuai kebutuhan */
+    height: auto;
+    border-radius: 10px; /* Tambahkan border-radius jika diinginkan */
+    position: relative;
+    z-index: 1;
+}
+
+
+.photo::after {
+    content: ""; /* Membuat elemen pseudo */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; /* Menutupi seluruh elemen .photo */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent); /* Gradasi dari bawah */
+    border-radius: 10px; /* Cocokkan dengan border-radius gambar */
+    z-index: 2; /* Pastikan berada di atas gambar */
+}
+
+.profil-desc{
+    border: #c43727 4px solid;
+    border-radius: 36px;
+    padding: 17px;
+    /* padding-right: 50%; */
+}
+
+#footer{
+    background-color: #c43727;
+    padding: 5px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.footer{
+    color: white;
+    font-family: 'garet', sans-serif;
+    font-size: 12px;
+    /* text-align: center; */
 }
 

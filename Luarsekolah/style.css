@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#home{
+    background-image: url(image/Background\ Lamp.png);
+    background-size: 100%;
+    background-position: center;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+    width: 100%;
+    height: 100vh;
+}
+
+/* navigation */
+.nav{
+    margin-right: 25px;
+    text-align: right;
+    justify-content: space-between;
+    font-family: 'garet', sans-serif;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 7px;
+    margin-top: 15px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 550;
+    position: relative;
+}
+
+.nav li a:hover{
+    color: #c43727;
+}
+
+.nav li a:active{
+    color: #d06a74;
+}
+
+/* header portfolio */
+.header h1{
+    color: white;
+    font-size: 200px;
+    text-align: center;
+    font-family: 'atkinson hyperlegible', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 48%;
+    display: flex;
+    left: 12.9%;
+}
+
+.header span{
+    color: white;
+    font-family: 'garet', sans-serif;
+    font-weight: 550;
+    font-size: 23px;
+    background-color: #c43727;
+    padding: 7px;
+}
+
+.role{
+    top: 47%;
+    left: 13.4%;
+    position: absolute;
+}
+
+.name{
+    top: 78%;
+    right: 13.4%;
+    position: absolute;
+}
+

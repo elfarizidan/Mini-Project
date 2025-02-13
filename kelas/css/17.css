@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0px;
+    background-color: crimson;
+    z-index: 1;
+}
+
+/* .container{
+    position: relative;
+    top: 100px;
+    z-index: 2;
+} */
+
+blockquote{
+    float: left;
+    font-style: italic;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}

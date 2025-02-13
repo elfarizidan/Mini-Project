@@ -1,0 +1,35 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 7px 5px 35px;
+}
+
+.credit{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+p.deskripsi{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    padding: 10px;
+}
+
+.tautan{
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+a.tautan:hover{
+    color: darkorchid;
+}
+
+a.tautan:active{
+    color: aquamarine;
+}
+
+a.tautan:visited{
+    color: brown;
+}

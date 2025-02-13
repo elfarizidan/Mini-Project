@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+p{
+    background-color: rgb(252, 220, 210);
+}
+
+/* relative */
+/* .posisi-relative{
+    position: relative;
+    left: 50px;
+    background-color: beige;
+}
+
+.posisi-absolute{
+    position: absolute;
+    background-color: cadetblue;
+    top: 200px;
+}
+
+.posisi-fixed{
+    background-color: cornflowerblue;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+} */
+
+.container{
+    top: 50px;
+}
+
+h2{
+    background-color: aquamarine;
+    height: 40px;
+    padding: 5px;
+}
+
+.judul-1{
+    position: sticky;
+    top: 0px;
+}
+
+.judul-2{
+    position: sticky;
+    top: 43px;
+}
+
+.judul-3{
+    position: sticky;
+    bottom: 0px;
+}

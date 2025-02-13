@@ -1,0 +1,29 @@
+body{
+    background-color: azure;
+    color: azure;
+}
+
+#artikel{
+    border: 2px solid #2e2b2b;
+    padding: 20px;
+}
+
+h1{
+    background-color:brown;
+    padding: 10px;
+}
+
+h2{
+    background-color: rgba(255, 0, 119, 0.5);
+    padding: 10px;
+}
+
+p.paragraf1{
+    background-color: hsl(30, 70%, 25%);
+    padding: 10px;
+}
+
+p.paragraf2{
+    background-color: hsla(30, 70%, 25%, 0.5);
+    padding: 10px;
+}

@@ -100,7 +100,15 @@
 }
 
 .profil {
-    margin-top: 50px;
+    margin-top: 45px;
+}
+
+.desc {
+    display: flex;
+    flex-wrap: nowrap; /* Mencegah elemen membungkus */
+    justify-content: space-between;
+    align-items: center; /* Agar vertikalnya sejajar */
+    text-align: left;
 }
 
 .desc h2{
@@ -108,7 +116,7 @@
     color: white;
     font-weight: bold;
     font-size: 85px;
-    margin-top: 25%;
+    margin-top: 15%;
     flex-basis: 50%;
     margin-left: 20px;
 }
@@ -127,29 +135,21 @@
     font-weight: 550;
 }
 
-.desc {
-    display: flex;
-    flex-wrap: nowrap; /* Mencegah elemen membungkus */
-    justify-content: space-between;
-    align-items: center; /* Agar vertikalnya sejajar */
-    text-align: left;
-}
-
 .profil {
-    flex-basis: 70%; 
+    flex-basis: 75%; 
 }
 
 .photo {
-    flex-basis: 50%; /* Memberi foto setengah lebar kontainer */
+    flex-basis: 50%; 
     display: flex;
     justify-content: flex-end; 
     position: relative;
 }
 
 .photo img {
-    width: 450px; /* Atur ukuran gambar sesuai kebutuhan */
+    width: 450px;
     height: auto;
-    border-radius: 10px; /* Tambahkan border-radius jika diinginkan */
+    border-radius: 10px;
     position: relative;
     z-index: 1;
 }
@@ -160,29 +160,24 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20%; /* Menutupi seluruh elemen .photo */
+    height: 20%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent); /* Gradasi dari bawah */
-    border-radius: 10px; /* Cocokkan dengan border-radius gambar */
-    z-index: 2; /* Pastikan berada di atas gambar */
+    border-radius: 10px; 
+    z-index: 2; 
+}
+
+.profil-border{
+    border: #c43727 4px solid;
+    border-radius: 38px;
+
 }
 
 .profil-desc{
-    border: #c43727 4px solid;
-    border-radius: 36px;
     padding: 17px;
     /* padding-right: 50%; */
 }
 
 /* portfolio */
-.portfolio h2{
-    font-family: 'atkinson hyperlegible', sans-serif;
-    color: white;
-    font-weight: bold;
-    font-size: 85px;
-    margin-top: 35px;
-    flex-basis: 50%;
-}
-
 .portfolio{
     display: flex;
     flex-direction: column;
@@ -196,7 +191,7 @@
     color: #c43727;
     font-weight: bold;
     font-size: 80px;
-    margin-top: 15%;
+    margin-top: 90px;
     flex-basis: 50%;
     text-align: center;
     padding: 0px;
@@ -205,16 +200,62 @@
     width: 425px;
 }
 
-.design-file img{
+.poster img{
     width: 300px;
     padding: 25px;
     margin-top: 3%;
 }
 
 /* contact */
+#contact h2{  /*header */
+    font-family: 'atkinson hyperlegible', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 85px;
+    margin-top: 15%;
+    flex-basis: 50%;
+    margin-left: 20px;
+}
 
+.sosmed{
+    margin-left: 4%;
+}
 
+.sosmed p{
+    color: white;
+    font-family: 'garet', sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #c43727;
+    border-radius: 100px;
+    width: 280px;
+    text-align: center;
+    margin: 25px;
+}
 
+.sosmed p a{
+    color: white;
+    text-decoration: none;
+}
+
+.sosmed p i{
+    margin: 5px;
+}
+
+.sosmed p:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.sosmed p a:hover{
+    color: #000000;
+}
+
+.sosmed p:active{
+    background-color: #d06a74;
+}
 
 #footer{
     background-color: #c43727;
@@ -229,5 +270,3 @@
     font-size: 12px;
     /* text-align: center; */
 }
-
-

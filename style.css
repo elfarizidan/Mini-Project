@@ -135,28 +135,22 @@
     font-weight: 550;
 }
 
-.profil {
-    flex-basis: 75%; 
-}
-
-.photo {
-    flex-basis: 50%; 
-    display: flex;
-    justify-content: flex-end; 
-    position: relative;
-}
-
 .photo img {
     width: 450px;
     height: auto;
     border-radius: 10px;
     position: relative;
     z-index: 1;
+    top: -250px;
+    flex-basis: 10%; 
+    display: flex;
+    justify-content: flex-end; 
+    position: relative;
 }
 
 .photo::after {
     content: ""; /* Membuat elemen pseudo */
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -169,12 +163,12 @@
 .profil-border{
     border: #c43727 4px solid;
     border-radius: 38px;
-
+    display: inline-flex;
+    flex-wrap: nowrap;
 }
 
 .profil-desc{
     padding: 17px;
-    /* padding-right: 50%; */
 }
 
 /* portfolio */

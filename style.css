@@ -33,6 +33,8 @@
     text-align: right;
     justify-content: space-between;
     font-family: 'garet', sans-serif;
+    position: fixed;
+    right: 7%;
 }
 
 .nav li{
@@ -92,7 +94,7 @@
 }
 
 /* about me */
-#about-me{
+.container{
     /* background-image: url(image/Background.png); */
     background-color: black;
 }
@@ -152,7 +154,6 @@
     z-index: 1;
 }
 
-
 .photo::after {
     content: ""; /* Membuat elemen pseudo */
     position: absolute;
@@ -172,12 +173,54 @@
     /* padding-right: 50%; */
 }
 
+/* portfolio */
+.portfolio h2{
+    font-family: 'atkinson hyperlegible', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 85px;
+    margin-top: 35px;
+    flex-basis: 50%;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.portfolio h3{
+    font-family: 'atkinson hyperlegible', sans-serif;
+    color: #c43727;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 15%;
+    flex-basis: 50%;
+    text-align: center;
+    padding: 0px;
+    border: #c43727 4px solid;
+    border-radius: 100px;
+    width: 425px;
+}
+
+.design-file img{
+    width: 300px;
+    padding: 25px;
+    margin-top: 3%;
+}
+
+/* contact */
+
+
+
+
 #footer{
     background-color: #c43727;
     padding: 5px;
     justify-content: center;
     display: flex;
-
 }
 
 .footer{
@@ -186,4 +229,5 @@
     font-size: 12px;
     /* text-align: center; */
 }
+
 

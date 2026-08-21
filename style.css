@@ -35,6 +35,7 @@
     font-family: 'garet', sans-serif;
     position: fixed;
     right: 7%;
+    z-index: 3;
 }
 
 .nav li{
@@ -182,7 +183,7 @@
 
 .portfolio h3{
     font-family: 'atkinson hyperlegible', sans-serif;
-    color: #c43727;
+    color: #ffffff;
     font-weight: bold;
     font-size: 80px;
     margin-top: 90px;
@@ -211,8 +212,24 @@
     margin-left: 20px;
 }
 
+.contact-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 70vh; 
+}
+
+.contact-image img {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
 .sosmed{
     margin-left: 4%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
 }
 
 .sosmed p{
@@ -221,10 +238,9 @@
     font-weight: 550;
     font-size: 20px;
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
     background-color: #c43727;
     border-radius: 100px;
-    width: 280px;
     text-align: center;
     margin: 25px;
 }
